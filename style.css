@@ -1,0 +1,199 @@
+*{margin: 0; padding: 0;}
+
+body{
+    font-family: 'Barlow', sans-serif;  
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-size: 20px;
+
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+  
+.offcanvas.offcanvas-end {
+  width: 40%;
+}
+
+
+
+.destaque{
+    color: rgb(160, 177, 230);
+}
+
+.texto-cinza{
+    color: rgb(199, 193, 193);
+}
+.banners{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner-1{
+    background-image: url("imagens/escritorio.png");
+}
+
+.sobre-mim{
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+.tecnologias-icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.mouse{
+    cursor: pointer;
+}
+
+.botao-padrao{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 15px;
+}
+
+.subtitulo{
+    color: rgb(228, 94, 32);
+}
+
+.card-body{
+    background-color: #1e3a5f;
+    color: white;
+}
+
+.modal-content{
+    border: 0;
+    background-color: #1e3a5f;
+}
+
+
+.linha{
+    margin: auto;
+    width: 400px; 
+    height: 4px; 
+    border: none;
+    background-color: rgb(199, 77, 21);
+    
+}
+
+
+.post{   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    
+}
+
+
+.projetos-imagens {
+    cursor: pointer;
+    align-items: center;
+    width: 300px;
+    max-width: 350px;
+    height: 250px;
+}
+
+.projeto-titulo{
+    font-size: 20px;
+    color:  rgb(199, 90, 40);
+}
+.projeto-info{
+    font-size: 15px;
+}
+
+.projeto-indo-destaque{
+    font-weight: bold;
+    color: rgb(160, 177, 230) ;
+}
+
+.post-visitar{
+    display: flex;
+    gap: 10px;
+}
+
+.post-visitar a{
+    color: inherit;
+}
+
+.ferramentas{
+    white-space: nowrap;
+}
+
+.footer{
+    margin-top: 100px;
+    background-color: #1e3a5f;
+    padding: 20px 0;
+    
+}
+
+.footer-elementos{
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer a {
+    color: inherit;
+}
+
+.email-numero{
+    margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .banners {
+      height: auto; 
+      padding: 80px 20px; 
+      background-attachment: scroll;
+  }
+
+  .home {
+      padding-top: 80px;
+  }
+
+  .home h1 {
+      font-size: 2rem; 
+      margin-bottom: 1rem;
+  }
+
+  .home p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+  }
+
+  .principal {
+      gap: 50px; 
+  }
+
+  #sobre-mim {
+      padding: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .post {
+      display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .post {
+      display: flex;
+      flex-direction: row;
+  }
+}
